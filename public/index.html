@@ -1,0 +1,23 @@
+<body>
+<script>
+$http.put('mongodb://imauri1:565632@ds117251.mlab.com:17251/tasker_connection'; 
+	  { 'Question': $scope.tweets.Question,
+		'Tweet': $scope.tweets.Tweet
+	  }).success(function (data, status, headers, config) {
+				   $scope.refreshGrid();
+				   $scope._id = '';
+	  }).error(function (data, status, headers, config) { alert(status) });
+</script>
+
+<form action="/my-handling-form-page" method="post">
+  <input type="radio" name="response" value="1"> Extremely Negative<br>
+  <input type="radio" name="response" value="2"> Somewhat Negative<br>
+  <input type="radio" name="response" value="3"> Neutral<br>
+  <input type="radio" name="response" value="4"> Somewhat Positive<br>
+  <input type="radio" name="response" value="5"> Extremely Positive<br>
+  <input type="radio" name="response" value="6"> Not Relevant to Self-Driving Cars<br>
+</form>	
+</body>
+
+
+
